@@ -5,6 +5,7 @@ services:
     image: bitnami/kubectl:latest
     volumes: 
       - ./kubeconfig.yaml:/.kube/config
+      - ./example:/example
     depends_on: 
       - server
 
