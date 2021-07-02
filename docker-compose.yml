@@ -4,8 +4,10 @@ services:
   kubectl:
     image: bitnami/kubectl:latest
     volumes: 
-      - ./kubeconfig.yaml:/.kube/config
-      - ./example:/example
+      - ./:/app
+    working_dir: /app
+    environment: 
+      - KUBECONFIG=/app/kubeconfig.yaml
     depends_on: 
       - server
 

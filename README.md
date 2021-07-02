@@ -5,7 +5,7 @@ Resources for the NaN-Labs Kuberentes GeekClub!
 
 You'll only need docker and docker-compose installed
 
-you need to create 2 files, `.env` and `kubeconfig.yaml`
+you need to create 1 files, `.env`
 
 start the cluster by running 
 
